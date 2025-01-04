@@ -1,6 +1,5 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
+-- Message Guy that exists#1915 if you have issues
+
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
@@ -9,6 +8,18 @@ game:GetService("GuiService"):ClearError()
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
 
+if game.PlaceId == 11520107397 or game.PlaceId == 6403373529 or game.PlaceId == 9015014224 then
+local bypass;
+    bypass = hookmetamethod(game, "__namecall", function(method, ...) 
+        if getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.Ban then
+            return
+        elseif getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.AdminGUI then
+            return
+        elseif getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.WalkSpeedChanged then
+            return
+        end
+        return bypass(method, ...)
+    end)
 if workspace:FindFirstChild("Spot") == nil then
 local SafeSpot = Instance.new("Part", workspace)
 SafeSpot.Position = Vector3.new(math.random(-25000,-2500),500,math.random(-25000,-2500))
@@ -59,7 +70,7 @@ AntiAcid.Anchored = true
 AntiAcid.Transparency = 1
 AntiLava.CanCollide = false
                 
-                local Window = OrionLib:MakeWindow({Name = "Slap Battles KGuestCheatsJ Hub | Slap Royale", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | Slap Royale", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -751,7 +762,7 @@ task.wait()
 
 elseif game.PlaceId == 11520107397 then
                 
-                local Window = OrionLib:MakeWindow({Name = "KGuestCheatsJ Slap Battles Hacked Hub | Killstreak Only", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | Killstreak Only", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -815,7 +826,7 @@ Tab:AddButton({
 Tab4:AddButton({
 	Name = "View Testing Server (Good for glove leaking)",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -836,7 +847,7 @@ game:GetService("TeleportService"):Teleport(9020359053)
 Tab4:AddButton({
 	Name = "View Slap Royale Testing Server",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -1244,7 +1255,7 @@ task.wait()
 Tab5:AddButton({
 	Name = "Get Elude",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -1267,7 +1278,7 @@ Tab5:AddButton({
 	Name = "Get Chain (Needs 1k slaps)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 1000 then
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -1841,7 +1852,7 @@ Tab:AddButton({
 Tab2:AddButton({
 	Name = "View Testing Server (Good for glove leaking)",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -1862,7 +1873,7 @@ game:GetService("TeleportService"):Teleport(9020359053)
 Tab2:AddButton({
 	Name = "View Slap Royale Testing Server",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -1971,7 +1982,7 @@ Tab3:AddButton({
 	Name = "Get Chain (Needs 1k slaps)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 1000 then
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -2186,7 +2197,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Rejoin Server",
 	Callback = function()
-      		local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+      		local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -2222,7 +2233,7 @@ VoidPart.Transparency = 1
 VoidPart.CanCollide = false
 end
 
-                local Window = OrionLib:MakeWindow({Name = "KGuestCheatsJ Slap Battles Hacked Hub", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "Slap Battles hub that exists | DISCONTINUED", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "Home",
@@ -2292,7 +2303,7 @@ Tab:AddButton({
 Tab4:AddButton({
 	Name = "View Testing Server (Good for glove leaking)",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -2313,7 +2324,7 @@ game:GetService("TeleportService"):Teleport(9020359053)
 Tab4:AddButton({
 	Name = "View Slap Royale Testing Server",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -2790,6 +2801,28 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
 task.wait()
 end
 while On and game.Players.LocalPlayer.leaderstats.Glove.Value == "Druid" do
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
+task.wait()
+end
+while On and game.Players.LocalPlayer.leaderstats.Glove.Value == "Oven" do
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame)
+task.wait()
+end
+while On and game.Players.LocalPlayer.leaderstats.Glove.Value == "Jester" do
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer("Ability1")
+task.wait()
+end
+while On and game.Players.LocalPlayer.leaderstats.Glove.Value == "Ferryman" do
+game.Players.LocalPlayer.Character.FerrymanStaff.StaffConfig.AbilityEvent:FireServer("Leap")
+wait(1.85)
+game.Players.LocalPlayer.Character.FerrymanStaff.StaffConfig.AbilityEvent:FireServer( "FinishLeap",game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+wait(1.7)
+end
+while On and game.Players.LocalPlayer.leaderstats.Glove.Value == "Scythe" do
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
+task.wait()
+end
+while On and game.Players.LocalPlayer.leaderstats.Glove.Value == "Blackhole" do
 game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
 task.wait()
 end
@@ -3439,7 +3472,7 @@ task.wait()
 Tab6:AddButton({
 	Name = "Get Elude",
 	Callback = function()
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
@@ -3462,7 +3495,7 @@ Tab6:AddButton({
 	Name = "Get Chain (Needs 1k slaps)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 1000 then
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
+local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
         if not game:IsLoaded() then
